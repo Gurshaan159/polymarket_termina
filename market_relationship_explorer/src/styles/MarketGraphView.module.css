@@ -1,0 +1,126 @@
+.graphCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  border: 1px solid #2a3554;
+  border-radius: 12px;
+  background: #081021;
+  overflow: hidden;
+}
+
+.graphCanvasWrap {
+  flex: 1;
+  min-height: 420px;
+  overflow: auto;
+}
+
+.graphSvg {
+  width: 100%;
+  min-width: 820px;
+  height: 100%;
+  min-height: 560px;
+}
+
+.edge {
+  stroke: #4a7bcf;
+  cursor: pointer;
+}
+
+.activeEdge {
+  stroke: #93beff;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #162945;
+  stroke: #4d76bf;
+  stroke-width: 2;
+}
+
+.centerNode circle {
+  fill: #1a3259;
+  stroke: #88b6ff;
+  stroke-width: 2.5;
+}
+
+.activeNode circle {
+  stroke: #9fcbff;
+}
+
+.nodeLabel,
+.nodeSubLabel {
+  fill: #d5e6ff;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.nodeLabel {
+  font-size: 10.5px;
+  font-weight: 600;
+}
+
+.nodeSubLabel {
+  font-size: 9px;
+  fill: #9fbbe6;
+}
+
+.legend {
+  border-top: 1px solid #1f2d4a;
+  padding: 9px 12px;
+  color: #9ab3dc;
+  font-size: 0.74rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.emptyRelationships {
+  border-top: 1px solid #1f2d4a;
+  padding: 10px 12px;
+  color: #9bb3db;
+  font-size: 0.8rem;
+}
+
+.relationshipList {
+  border-top: 1px solid #1f2d4a;
+  max-height: 180px;
+  overflow: auto;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.relationshipItem {
+  border: 1px solid #2b4370;
+  border-radius: 8px;
+  background: #0f1d39;
+  color: #d8e8ff;
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.relationshipItem:hover {
+  background: #11264b;
+  border-color: #4775bf;
+}
+
+.relationshipTitle {
+  font-size: 0.8rem;
+}
+
+.relationshipMeta {
+  color: #92b3e9;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}

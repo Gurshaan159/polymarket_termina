@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 100dvh;
+  min-height: 100dvh;
+  padding: 14px;
+  background: linear-gradient(180deg, rgba(7, 12, 23, 0.8), rgba(4, 7, 13, 0.96));
+  overflow: hidden;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(250px, 300px) minmax(0, 1fr) minmax(300px, 360px);
+  gap: 14px;
+  min-height: 0;
+  height: 0;
+  flex: 1;
+  overflow: hidden;
+}
+
+.leftPanel,
+.centerPanel,
+.rightPanel {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftPanel > * {
+  flex: 1;
+  min-height: 0;
+}
+
+.rightPanel {
+  display: block;
+  min-width: 0;
+}
+
+.centerPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.stateCard {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  border: 1px solid #2a3554;
+  border-radius: 12px;
+  background: #0a1222;
+  color: #9fb5dd;
+}
+
+.noticeCard {
+  border: 1px solid #6e5130;
+  border-radius: 10px;
+  background: #2a1b0d;
+  color: #ffd6a8;
+  padding: 8px 10px;
+  font-size: 0.82rem;
+}
+
+.hoverCard {
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: #b9d2ff;
+  background: rgba(9, 16, 31, 0.9);
+  border: 1px solid #2f426b;
+  width: fit-content;
+}
+
+@media (max-width: 1440px) {
+  .layout {
+    grid-template-columns: 260px minmax(0, 1fr) 300px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 280px 1fr 360px;
+  }
+}
