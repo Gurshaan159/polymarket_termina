@@ -1,0 +1,121 @@
+.overview-dashboard {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #d9e2ec;
+  background: #111827;
+  padding: 1rem;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.dashboard-header p {
+  margin: 0.35rem 0 0;
+  color: #9fb3c8;
+  font-size: 0.9rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+}
+
+.dashboard-section {
+  background: #1f2937;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 0.75rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.section-header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.section-header span {
+  color: #9fb3c8;
+  font-size: 0.75rem;
+}
+
+.section-grid {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.market-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 0.55rem;
+}
+
+.market-title {
+  margin: 0 0 0.4rem;
+  font-size: 0.82rem;
+  line-height: 1.25;
+}
+
+.market-stats-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.15rem 0.6rem;
+  font-size: 0.78rem;
+}
+
+.market-stats-grid span {
+  color: #94a3b8;
+}
+
+.market-stats-grid strong {
+  text-align: right;
+}
+
+.positive {
+  color: #22c55e;
+}
+
+.negative {
+  color: #f97316;
+}
+
+.status-banner {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.error-banner {
+  border-color: #7f1d1d;
+  color: #fecaca;
+}
+
+.empty-hint {
+  margin: 0;
+  color: #9fb3c8;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
