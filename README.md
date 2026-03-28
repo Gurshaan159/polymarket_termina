@@ -1,1 +1,1 @@
-# polymarket_termina
+# polymarket_terminal
